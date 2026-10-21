@@ -182,3 +182,34 @@ body {
     color: #333;
     cursor: pointer;
 }
+/* --- RESPONSIVE CHO ĐIỆN THOẠI (MOBILE) --- */
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .search-wrapper {
+        width: 100%;
+    }
+
+    /* Chuyển popup từ 2 cột ngang thành 1 cột dọc trên mobile */
+    .search-popup-dropdown {
+        flex-direction: column;
+        gap: 15px;
+        padding: 12px;
+        top: calc(100% + 5px);
+    }
+
+    .left-col {
+        border-right: none;
+        border-bottom: 1px solid #f0f0f0;
+        padding-right: 0;
+        padding-bottom: 12px;
+    }
+
+    .category-grid-popup {
+        grid-template-columns: 1fr; /* Danh mục hiển thị 1 cột trên điện thoại */
+    }
+}
