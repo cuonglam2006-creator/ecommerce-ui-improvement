@@ -1,75 +1,117 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cải tiến Popup Tìm Kiếm Thông Minh - TMĐT</title>
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BookStore.vn – Tìm kiếm thông minh</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="header-container">
-        <!-- Logo website -->
-        <div class="logo">
-            <h2>BookStore.vn</h2>
+
+  <header class="site-header">
+    <div class="header-inner">
+
+      <a class="logo" href="#" aria-label="BookStore.vn - Trang chủ">BookStore.vn</a>
+
+      <!-- Khu vực tìm kiếm: popup mở bằng :focus-within, không cần JavaScript -->
+      <div class="search" role="search">
+        <div class="search-field">
+          <label class="sr-only" for="q">Tìm kiếm sách</label>
+          <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>
+          </svg>
+          <input class="search-input" id="q" type="search" placeholder="Tìm tựa sách, tác giả..." autocomplete="off">
+          <button class="search-btn" type="button" aria-label="Tìm kiếm">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
+              <circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>
+            </svg>
+          </button>
         </div>
 
-        <!-- Khu vực tìm kiếm cải tiến -->
-        <div class="search-wrapper">
-            <div class="search-box">
-                <input type="text" placeholder="Tìm kiếm tựa sách, tác giả hoặc danh mục..." autocomplete="off">
-                <button class="search-btn">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
-                </button>
-            </div>
+        <div class="dropdown" tabindex="-1">
 
-            <!-- Popup gợi ý chia cột hiện đại (Cải tiến so với bản gốc bị rối mắt) -->
-            <div class="search-popup-dropdown">
-                <!-- Cột trái: Từ khóa hot dạng thẻ tag -->
-                <div class="popup-column left-col">
-                    <div class="section-title">
-                        <span class="icon">🔥</span> Từ khóa xu hướng
-                    </div>
-                    <div class="tags-container">
-                        <span class="search-tag">Claude Toàn Tập</span>
-                        <span class="search-tag">Sách Kinh Tế</span>
-                        <span class="search-tag">Jim Collins</span>
-                        <span class="search-tag">Takenote Toán 8</span>
-                        <span class="search-tag">Đắc Nhân Tâm</span>
-                        <span class="search-tag">Sách Kỹ Năng</span>
-                    </div>
-                </div>
+          <section class="panel" aria-labelledby="trend-title">
+            <h2 class="panel-title" id="trend-title">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 2c.5 3-1 4.6-2.4 6.2C8.3 9.7 7 11.2 7 13.6A5 5 0 0 0 12 19a5 5 0 0 0 5-5c0-1.7-.8-3-1.6-4-.3 1-.9 1.7-1.7 2 .4-3.2-.4-6.7-1.7-10z"/>
+              </svg>
+              Từ khóa xu hướng
+            </h2>
+            <ul class="tags">
+              <li><a class="tag" href="#">Claude Toàn Tập</a></li>
+              <li><a class="tag" href="#">Sách Kinh Tế</a></li>
+              <li><a class="tag" href="#">Jim Collins</a></li>
+              <li><a class="tag" href="#">Takenote Toán 8</a></li>
+              <li><a class="tag" href="#">Đắc Nhân Tâm</a></li>
+              <li><a class="tag" href="#">Sách Kỹ Năng</a></li>
+            </ul>
+          </section>
 
-                <!-- Cột phải: Danh mục nổi bật có hình ảnh minh họa -->
-                <div class="popup-column right-col">
-                    <div class="section-title">
-                        <span class="icon">📚</span> Danh mục nổi bật
-                    </div>
-                    <div class="category-grid-popup">
-                        <div class="cat-item">
-                            <div class="cat-img-box">📖</div>
-                            <span>Kinh Tế Học</span>
-                        </div>
-                        <div class="cat-item">
-                            <div class="cat-img-box">💡</div>
-                            <span>Kỹ Năng Sống</span>
-                        </div>
-                        <div class="cat-item">
-                            <div class="cat-img-box">🤖</div>
-                            <span>AI & Công Nghệ</span>
-                        </div>
-                        <div class="cat-item">
-                            <div class="cat-img-box">🎨</div>
-                            <span>Văn Học - Tiểu Thuyết</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          <section class="panel" aria-labelledby="cat-title">
+            <h2 class="panel-title" id="cat-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3.5" y="3.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.5"/>
+                <rect x="3.5" y="13.5" width="7" height="7" rx="1.5"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.5"/>
+              </svg>
+              Danh mục nổi bật
+            </h2>
+            <ul class="cat-list">
+              <li>
+                <a class="cat" href="#">
+                  <span class="cat-ico" style="--tint:#fff1e0" aria-hidden="true">📖</span>
+                  <span><span class="cat-name">Claude Toàn Tập</span><span class="cat-meta">Sách về AI &amp; công nghệ</span></span>
+                </a>
+              </li>
+              <li>
+                <a class="cat" href="#">
+                  <span class="cat-ico" style="--tint:#e8f0ff" aria-hidden="true">🤖</span>
+                  <span><span class="cat-name">Trí tuệ nhân tạo</span><span class="cat-meta">Lập trình &amp; ứng dụng AI</span></span>
+                </a>
+              </li>
+              <li>
+                <a class="cat" href="#">
+                  <span class="cat-ico" style="--tint:#e6f6ec" aria-hidden="true">📈</span>
+                  <span><span class="cat-name">Kinh tế &amp; Quản trị</span><span class="cat-meta">Khởi nghiệp, tài chính</span></span>
+                </a>
+              </li>
+              <li>
+                <a class="cat" href="#">
+                  <span class="cat-ico" style="--tint:#fdeaf3" aria-hidden="true">💡</span>
+                  <span><span class="cat-name">Kỹ năng sống</span><span class="cat-meta">Phát triển bản thân</span></span>
+                </a>
+              </li>
+            </ul>
+          </section>
+
         </div>
+      </div>
 
-        <!-- Tiện ích bên phải -->
-        <div class="header-right">
-            <div class="cart-icon">🛒 Giỏ hàng (1)</div>
-        </div>
+      <nav class="actions" aria-label="Tài khoản và giỏ hàng">
+        <a class="action" href="#">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/>
+          </svg>
+          <span class="action-label">Tài khoản</span>
+        </a>
+        <a class="action" href="#">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M3 4h2.5l2.2 11h10.6l2-8H6.4"/><circle cx="9.5" cy="19.5" r="1.3"/><circle cx="17" cy="19.5" r="1.3"/>
+          </svg>
+          <span class="action-label">Giỏ hàng</span>
+          <span class="badge" aria-label="0 sản phẩm">0</span>
+        </a>
+      </nav>
+
     </div>
+  </header>
+
+  <main class="page">
+    <p class="hint">Nhấn vào ô tìm kiếm để xem gợi ý.</p>
+  </main>
+
 </body>
 </html>
