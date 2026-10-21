@@ -1,0 +1,184 @@
+/* Thiết lập chung */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f5f7;
+    padding: 40px 20px;
+}
+
+/* Header container căn giữa trên laptop */
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 15px 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    position: relative;
+}
+
+.logo h2 {
+    color: #c92127;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Khung tìm kiếm chính */
+.search-wrapper {
+    position: relative;
+    width: 50%;
+}
+
+.search-box {
+    display: flex;
+    border: 2px solid #c92127;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #fff;
+    transition: box-shadow 0.2s;
+}
+
+.search-box:focus-within {
+    box-shadow: 0 0 0 3px rgba(201, 33, 39, 0.15);
+}
+
+.search-box input {
+    flex: 1;
+    padding: 11px 16px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+}
+
+.search-btn {
+    background-color: #c92127;
+    border: none;
+    padding: 0 22px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: background-color 0.2s;
+}
+
+.search-btn:hover {
+    background-color: #a01a1f;
+}
+
+/* --- ĐIỂM CẢI TIẾN: POPUP CHIA CỘT HIỆN ĐẠI TRÊN LAPTOP --- */
+.search-popup-dropdown {
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    border: 1px solid #eaeaea;
+    display: flex; /* Chia 2 cột rõ ràng */
+    padding: 20px;
+    gap: 20px;
+    z-index: 99;
+}
+
+/* Cấu trúc từng cột */
+.popup-column {
+    flex: 1;
+}
+
+.left-col {
+    border-right: 1px solid #f0f0f0;
+    padding-right: 15px;
+}
+
+.section-title {
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-transform: uppercase;
+}
+
+/* Cột trái: Thẻ tag từ khóa */
+.tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.search-tag {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    border: 1px solid #e1e4e8;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.search-tag:hover {
+    background-color: #fff5f5;
+    color: #c92127;
+    border-color: #c92127;
+}
+
+/* Cột phải: Danh mục nổi bật dạng lưới nhỏ */
+.category-grid-popup {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.cat-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    background: #f8f9fa;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.cat-item:hover {
+    background: #fff5f5;
+    transform: translateY(-2px);
+}
+
+.cat-img-box {
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.cat-item span {
+    font-size: 13px;
+    font-weight: 500;
+    color: #333;
+}
+
+.header-right {
+    font-weight: 600;
+    color: #333;
+    cursor: pointer;
+}
