@@ -120,8 +120,12 @@ h2 { margin: 0; }
 /* Danh mục nổi bật */
 .cat-list { display: grid; gap: 4px; }
 .cat {
-  display: flex; align-items: center; gap: 12px;
-  min-height: 56px; padding: 8px 10px; border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-height: 60px;
+  padding: 9px 12px;
+  border-radius: 12px;
   transition: background .15s;
 }
 .cat-ico {
