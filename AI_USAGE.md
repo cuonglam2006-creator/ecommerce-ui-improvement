@@ -24,7 +24,6 @@ AI được sử dụng để hỗ trợ các công việc sau:
 
 ## 3. Các prompt tiêu biểu đã sử dụng
 
-*Lưu ý: Các prompt dưới đây được trình bày dưới dạng tóm tắt nội dung yêu cầu đã sử dụng trong quá trình làm bài, không phải bản ghi nguyên văn toàn bộ lịch sử trò chuyện.*
 
 ### 3.1. Sử dụng Google Gemini
 
