@@ -49,7 +49,7 @@ Các kỹ thuật CSS3 được thực hành:
 ## 4. Cấu trúc thư mục chính
 
 ```text
-BookStore.vn/
+ecommerce-ui-improvement/
 │
 ├── index.html
 │
