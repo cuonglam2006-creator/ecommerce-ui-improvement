@@ -20,11 +20,11 @@
       <!-- Khu vực tìm kiếm: popup mở bằng :focus-within, không cần JavaScript -->
       <div class="search" role="search">
         <div class="search-field">
-          <label class="sr-only" for="q">Tìm kiếm sách</label>
+          <label class="sr-only" for="q">Tìm kiếm sản phẩm</label>
           <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
             <circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>
           </svg>
-          <input class="search-input" id="q" type="search" placeholder="Tìm tựa sách, tác giả..." autocomplete="off">
+          <input class="search-input" id="q" type="search" placeholder="Tìm sách, quà lưu niệm, đồ dùng học tập..." autocomplete="off">
           <button class="search-btn" type="button" aria-label="Tìm kiếm">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true">
               <circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/>
@@ -42,12 +42,12 @@
               Từ khóa xu hướng
             </h2>
             <ul class="tags">
-              <li><a class="tag" href="#">Claude Toàn Tập</a></li>
-              <li><a class="tag" href="#">Sách Kinh Tế</a></li>
-              <li><a class="tag" href="#">Jim Collins</a></li>
-              <li><a class="tag" href="#">Takenote Toán 8</a></li>
-              <li><a class="tag" href="#">Đắc Nhân Tâm</a></li>
-              <li><a class="tag" href="#">Sách Kỹ Năng</a></li>
+              <li><a class="tag" href="#books">Sách bán chạy</a></li>
+              <li><a class="tag" href="#souvenirs">Quà lưu niệm</a></li>
+              <li><a class="tag" href="#stationery">Đồ dùng học tập</a></li>
+              <li><a class="tag" href="#books">Đắc Nhân Tâm</a></li>
+              <li><a class="tag" href="#stationery">Sổ tay</a></li>
+              <li><a class="tag" href="#souvenirs">Túi tote</a></li>
             </ul>
           </section>
 
@@ -60,30 +60,9 @@
               Danh mục nổi bật
             </h2>
             <ul class="cat-list">
-              <li>
-                <a class="cat" href="#">
-                  <span class="cat-ico" style="--tint:#fff1e0" aria-hidden="true">📖</span>
-                  <span><span class="cat-name">Claude Toàn Tập</span><span class="cat-meta">Sách về AI &amp; công nghệ</span></span>
-                </a>
-              </li>
-              <li>
-                <a class="cat" href="#">
-                  <span class="cat-ico" style="--tint:#e8f0ff" aria-hidden="true">🤖</span>
-                  <span><span class="cat-name">Trí tuệ nhân tạo</span><span class="cat-meta">Lập trình &amp; ứng dụng AI</span></span>
-                </a>
-              </li>
-              <li>
-                <a class="cat" href="#">
-                  <span class="cat-ico" style="--tint:#e6f6ec" aria-hidden="true">📈</span>
-                  <span><span class="cat-name">Kinh tế &amp; Quản trị</span><span class="cat-meta">Khởi nghiệp, tài chính</span></span>
-                </a>
-              </li>
-              <li>
-                <a class="cat" href="#">
-                  <span class="cat-ico" style="--tint:#fdeaf3" aria-hidden="true">💡</span>
-                  <span><span class="cat-name">Kỹ năng sống</span><span class="cat-meta">Phát triển bản thân</span></span>
-                </a>
-              </li>
+              <li><a class="cat" href="#books"><span class="cat-ico" style="--tint:#fff1e0" aria-hidden="true">📚</span><span><span class="cat-name">Sách</span><span class="cat-meta">Văn học, kỹ năng, kinh tế</span></span></a></li>
+              <li><a class="cat" href="#souvenirs"><span class="cat-ico" style="--tint:#fdeaf3" aria-hidden="true">🎁</span><span><span class="cat-name">Đồ lưu niệm</span><span class="cat-meta">Quà tặng và phụ kiện xinh</span></span></a></li>
+              <li><a class="cat" href="#stationery"><span class="cat-ico" style="--tint:#e6f6ec" aria-hidden="true">✏️</span><span><span class="cat-name">Đồ dùng học tập</span><span class="cat-meta">Sổ, bút và dụng cụ học tập</span></span></a></li>
             </ul>
           </section>
 
@@ -107,10 +86,67 @@
       </nav>
 
     </div>
+    <nav class="category-nav" aria-label="Danh mục sản phẩm">
+      <a href="#books"><span class="nav-icon" aria-hidden="true">📚</span><span class="nav-copy"><span class="nav-name">Sách</span><span class="nav-note">Tri thức mỗi ngày</span></span><span class="nav-arrow" aria-hidden="true">↗</span></a>
+      <a href="#souvenirs"><span class="nav-icon" aria-hidden="true">🎁</span><span class="nav-copy"><span class="nav-name">Đồ lưu niệm</span><span class="nav-note">Món quà ý nghĩa</span></span><span class="nav-arrow" aria-hidden="true">↗</span></a>
+      <a href="#stationery"><span class="nav-icon" aria-hidden="true">✏️</span><span class="nav-copy"><span class="nav-name">Đồ dùng học tập</span><span class="nav-note">Sẵn sàng sáng tạo</span></span><span class="nav-arrow" aria-hidden="true">↗</span></a>
+    </nav>
   </header>
 
   <main class="page">
-    <p class="hint">Nhấn vào ô tìm kiếm để xem gợi ý.</p>
+    <section class="hero" aria-labelledby="hero-title">
+      <div>
+        <p class="eyebrow">GÓC NHỎ CỦA NGƯỜI YÊU SÁCH</p>
+        <h1 id="hero-title">Mở trang sách mới,<br><span>thêm niềm vui mỗi ngày.</span></h1>
+        <p class="hero-copy">Khám phá sách hay, món quà đáng yêu và đồ dùng học tập truyền cảm hứng.</p>
+        <a class="hero-cta" href="#books">Khám phá sản phẩm <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <span class="hero-sparkle">✦</span>
+        <span class="hero-book">📚</span>
+        <span class="hero-gift">🎁</span>
+        <span class="hero-pencil">✏️</span>
+      </div>
+    </section>
+
+    <section class="product-section" id="books" aria-labelledby="books-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">NUÔI DƯỠNG TRI THỨC</p><h2 id="books-title">Sách hay mỗi ngày</h2></div>
+        <a class="section-link" href="#books">Xem tất cả <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card"><div class="product-art"><img src="images/products/da-nhan-tam.svg" alt="Minh họa bìa sách Đắc Nhân Tâm"></div><div class="product-info"><p class="product-type">SÁCH KỸ NĂNG</p><h3>Đắc Nhân Tâm</h3><p class="product-author">Dale Carnegie</p><p class="product-price">86.000₫</p></div></article>
+        <article class="product-card"><div class="product-art"><img src="images/products/nha-gia-kim.svg" alt="Minh họa bìa sách Nhà Giả Kim"></div><div class="product-info"><p class="product-type">VĂN HỌC</p><h3>Nhà Giả Kim</h3><p class="product-author">Paulo Coelho</p><p class="product-price">68.000₫</p></div></article>
+        <article class="product-card"><div class="product-art"><img src="images/products/tuoi-tre.svg" alt="Minh họa bìa sách Tuổi Trẻ Đáng Giá Bao Nhiêu"></div><div class="product-info"><p class="product-type">SÁCH PHÁT TRIỂN BẢN THÂN</p><h3>Tuổi Trẻ Đáng Giá Bao Nhiêu</h3><p class="product-author">Rosie Nguyễn</p><p class="product-price">79.000₫</p></div></article>
+        <article class="product-card"><div class="product-art"><img src="images/products/tu-duy.svg" alt="Minh họa bìa sách Tư Duy Nhanh Và Chậm"></div><div class="product-info"><p class="product-type">TÂM LÝ HỌC</p><h3>Tư Duy Nhanh Và Chậm</h3><p class="product-author">Daniel Kahneman</p><p class="product-price">189.000₫</p></div></article>
+      </div>
+    </section>
+
+    <section class="product-section" id="souvenirs" aria-labelledby="souvenirs-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">TRAO GỬI YÊU THƯƠNG</p><h2 id="souvenirs-title">Đồ lưu niệm dễ thương</h2></div>
+        <a class="section-link" href="#souvenirs">Xem tất cả <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card"><div class="product-art"><img src="images/products/tui-tote.svg" alt="Minh họa túi tote Book Lover"></div><div class="product-info"><p class="product-type">PHỤ KIỆN</p><h3>Túi tote Book Lover</h3><p class="product-author">Canvas dày, tiện dụng</p><p class="product-price">129.000₫</p></div></article>
+        <article class="product-card"><div class="product-art"><img src="images/products/bookmark.svg" alt="Minh họa bộ bookmark hoa ép"></div><div class="product-info"><p class="product-type">QUÀ TẶNG</p><h3>Bộ bookmark hoa ép</h3><p class="product-author">Bộ 4 chiếc</p><p class="product-price">45.000₫</p></div></article>
+        <article class="product-card"><div class="product-art"><img src="images/products/ly-su.svg" alt="Minh họa ly sứ đọc sách"></div><div class="product-info"><p class="product-type">ĐỒ LƯU NIỆM</p><h3>Ly sứ “Đọc thêm một trang”</h3><p class="product-author">Dung tích 350 ml</p><p class="product-price">115.000₫</p></div></article>
+        <article class="product-card"><div class="product-art"><img src="images/products/moc-khoa.svg" alt="Minh họa móc khóa gấu đọc sách"></div><div class="product-info"><p class="product-type">PHỤ KIỆN</p><h3>Móc khóa gấu đọc sách</h3><p class="product-author">Nhỏ xinh, đáng yêu</p><p class="product-price">39.000₫</p></div></article>
+      </div>
+    </section>
+
+    <section class="product-section" id="stationery" aria-labelledby="stationery-title">
+      <div class="section-heading">
+        <div><p class="eyebrow">HỌC TẬP THẬT CẢM HỨNG</p><h2 id="stationery-title">Đồ dùng học tập</h2></div>
+        <a class="section-link" href="#stationery">Xem tất cả <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="product-grid">
+        <article class="product-card"><div class="product-art"><img src="images/products/so-tay.svg" alt="Minh họa sổ tay Mây Nhỏ"></div><div class="product-info"><p class="product-type">SỔ TAY</p><h3>Sổ tay Mây Nhỏ</h3><p class="product-author">Bìa cứng, 160 trang</p><p class="product-price">59.000₫</p></div></article>
+        <article class="product-card"><div class="product-art"><img src="images/products/but-gel.svg" alt="Minh họa bộ bút gel pastel"></div><div class="product-info"><p class="product-type">BÚT VIẾT</p><h3>Bộ 5 bút gel pastel</h3><p class="product-author">Mực xanh, nét 0.5 mm</p><p class="product-price">49.000₫</p></div></article>
+        <article class="product-card"><div class="product-art"><img src="images/products/but-highlight.svg" alt="Minh họa bộ bút highlight pastel"></div><div class="product-info"><p class="product-type">DỤNG CỤ HỌC TẬP</p><h3>Bộ bút highlight dịu mắt</h3><p class="product-author">Bộ 4 màu pastel</p><p class="product-price">55.000₫</p></div></article>
+        <article class="product-card"><div class="product-art"><img src="images/products/giay-ghi-chu.svg" alt="Minh họa bộ giấy ghi chú sắc màu"></div><div class="product-info"><p class="product-type">GIẤY GHI CHÚ</p><h3>Sticky note sắc màu</h3><p class="product-author">5 xấp tiện lợi</p><p class="product-price">32.000₫</p></div></article>
+      </div>
+    </section>
   </main>
 
 </body>
