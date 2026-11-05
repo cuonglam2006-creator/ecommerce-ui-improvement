@@ -256,8 +256,7 @@ Các nội dung trên chưa được giải quyết trong phần cải tiến HT
 ## 12. Thông tin repository
 
 - **GitHub Repository:** [https://github.com/cuonglam2006-creator/ecommerce-ui-improvement](https://github.com/cuonglam2006-creator/ecommerce-ui-improvement)
-- **Website Preview:** [https://literate-memory-5vr5w5qjxggjh75pq-3000.app.github.dev/](https://literate-memory-5vr5w5qjxggjh75pq-3000.app.github.dev/)
-
+- **Website Preview:**  https://cuonglam2006-creator.github.io/ecommerce-ui-improvement/
 ---
 
 **Kết thúc báo cáo bài tập cá nhân Buổi 2 – Phát triển ứng dụng WEB/TMĐT.**
