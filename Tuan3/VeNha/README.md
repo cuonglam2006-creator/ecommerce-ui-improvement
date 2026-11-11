@@ -6,7 +6,7 @@
 - **Họ và tên:** Lâm Phú Cường
 - **Mã số sinh viên:** 31241023888
 - **Lớp:** EE0002
-- **Học phần:** Phát triển ứng dụng WEB/TMĐT
+- **Học phần:** Phát triển ứng dụng TMĐT
 
 ## Website bài tập
 
