@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+
+        .portfolio {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #f7f7f7;
+            padding: 35px 20px 25px;
+            text-align: center;
+        }
+
+        .portfolio h2 {
+            font-size: 22px;
+            font-weight: bold;
+            margin: 0 0 20px;
+            color: #333;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .portfolio h2::after {
+            content: "";
+            display: block;
+            width: 50px;
+            height: 2px;
+            background-color: #50b9ae;
+            margin: 12px auto 0;
+        }
+
+        .list-tab {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px;
+    white-space: nowrap;
+}
+
+.list-tab li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.list-tab a {
+    text-decoration: none;
+    color: #333;
+    font-size: 10px;
+}
+
+.list-tab li:first-child a {
+    color: #50b9ae;
+}
+
+        .list-tab li:first-child a {
+            color: #50b9ae;
+        }
+
+        .galerry {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .galerry li {
+            width: 100%;
+        }
+
+        .galerry img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="portfolio">
+
+        <h2>MY PORTFOLIO</h2>
+
+        <ul class="list-tab">
+            <li><a href="./">All</a></li>
+            <li><a href="./">Web App</a></li>
+            <li><a href="./">UI/UX</a></li>
+            <li><a href="./">Graphics Design</a></li>
+            <li><a href="./">Mobile App</a></li>
+            <li><a href="./">Branding</a></li>
+            <li><a href="./">Marketing</a></li>
+        </ul>
+
+        <ul class="galerry">
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt=""></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt=""></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt=""></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt=""></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt=""></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt=""></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt=""></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt=""></a></li>
+            <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt=""></a></li>
+        </ul>
+
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài 9 - Font Awesome</title>
+
+    <!-- Kết nối thư viện Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px;
+            font-family: Arial, sans-serif;
+            background-color: #f1f3f6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 12px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #2563a6;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #777;
+            margin-bottom: 30px;
+        }
+
+        .icon-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .icon-item {
+            padding: 25px 15px;
+            text-align: center;
+            background-color: #f5f8fc;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .icon-item:hover {
+            background-color: #e3efff;
+            transform: translateY(-5px);
+        }
+
+        .icon-item i {
+            font-size: 38px;
+            color: #2878c8;
+            margin-bottom: 15px;
+        }
+
+        .icon-item h3 {
+            margin: 5px 0;
+            color: #333;
+        }
+
+        .icon-item p {
+            margin: 8px 0 0;
+            color: #777;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .icon-list {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>
+            <i class="fa-solid fa-graduation-cap"></i>
+            CÁC LĨNH VỰC HỌC TẬP
+        </h1>
+
+        <p class="subtitle">
+            Khám phá các lĩnh vực công nghệ và kinh doanh
+        </p>
+
+        <div class="icon-list">
+
+            <div class="icon-item">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h3>Thương mại điện tử</h3>
+                <p>Electronic Commerce</p>
+            </div>
+
+            <div class="icon-item">
+                <i class="fa-solid fa-database"></i>
+                <h3>Cơ sở dữ liệu</h3>
+                <p>Database Management</p>
+            </div>
+
+            <div class="icon-item">
+                <i class="fa-solid fa-chart-line"></i>
+                <h3>Phân tích dữ liệu</h3>
+                <p>Data Analytics</p>
+            </div>
+
+            <div class="icon-item">
+                <i class="fa-solid fa-code"></i>
+                <h3>Lập trình</h3>
+                <p>Programming</p>
+            </div>
+
+            <div class="icon-item">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h3>Công nghệ di động</h3>
+                <p>Mobile Technology</p>
+            </div>
+
+            <div class="icon-item">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>An toàn thông tin</h3>
+                <p>Information Security</p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang bài tập CSS - Lâm Phú Cường</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 30px 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f2f4f7;
+            color: #333;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: auto;
+            padding: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        h1 {
+            text-align: center;
+            color: #245b91;
+            margin-bottom: 25px;
+        }
+
+        .profile {
+            text-align: center;
+            padding: 25px;
+            margin-bottom: 30px;
+            background-color: #eef5fc;
+            border-radius: 10px;
+        }
+
+        .profile img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #245b91;
+        }
+
+        .profile h2 {
+            border: none;
+            margin-top: 15px;
+        }
+
+        .profile p {
+            margin: 10px 0;
+        }
+
+        h2 {
+            color: #245b91;
+            border-bottom: 2px solid #dce6f0;
+            padding-bottom: 10px;
+        }
+
+        .exercise-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .exercise-list li {
+            margin: 10px 0;
+            padding: 14px 16px;
+            background-color: #f7f9fc;
+            border: 1px solid #e1e6ed;
+            border-radius: 6px;
+            transition: 0.2s;
+        }
+
+        .exercise-list li:hover {
+            background-color: #eaf2fc;
+            transform: translateX(4px);
+        }
+
+        .exercise-list a {
+            color: #2468a8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .exercise-list a:hover {
+            color: #e07828;
+            text-decoration: underline;
+        }
+
+        .social {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .social a {
+            display: inline-block;
+            margin: 5px 10px;
+            color: #2468a8;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .social a:hover {
+            color: #e07828;
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #eee;
+            text-align: center;
+            color: #888;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>TRANG BÀI TẬP CSS</h1>
+
+        <!-- Thông tin cá nhân -->
+        <section class="profile">
+
+            <img src="avatar.jpg" alt="Ảnh cá nhân của Lâm Phú Cường">
+
+            <h2>Thông tin cá nhân</h2>
+
+            <p><strong>Họ và tên:</strong> Lâm Phú Cường</p>
+            <p><strong>Mã số sinh viên:</strong> 31241023888</p>
+            <p><strong>Lớp:</strong> EE0002</p>
+            <p><strong>Học phần:</strong> Phát triển ứng dụng WEB/TMĐT</p>
+
+        </section>
+
+        <!-- Danh sách bài tập -->
+        <section>
+
+            <h2>Danh sách bài tập</h2>
+
+            <ul class="exercise-list">
+                <li>
+                    <a href="BaiTap2.html">
+                        Bài 2 – Định dạng CSS cơ bản
+                    </a>
+                </li>
+
+                <li>
+                    <a href="BaiTap4.html">
+                        Bài 4 – Thiết kế menu ngang
+                    </a>
+                </li>
+
+                <li>
+                    <a href="BaiTap5.html">
+                        Bài 5 – Best Shared Hosting
+                    </a>
+                </li>
+
+                <li>
+                    <a href="BaiTap6.html">
+                        Bài 6 – My Portfolio
+                    </a>
+                </li>
+
+                <li>
+                    <a href="BaiTap7.html">
+                        Bài 7 – Bố cục website
+                    </a>
+                </li>
+
+                <li>
+                    <a href="BaiTap8.html">
+                        Bài 8 – CSS1
+                    </a>
+                </li>
+
+                <li>
+                    <a href="BaiTap9.html">
+                        Bài 9 – Font Awesome
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+        <!-- Mạng xã hội -->
+        <section class="social">
+
+            <h2>Liên kết mạng xã hội</h2>
+
+            <a href="https://www.facebook.com/" target="_blank">
+                Facebook
+            </a>
+
+            <a href="https://github.com/" target="_blank">
+                GitHub
+            </a>
+
+        </section>
+
+        <footer>
+            © 2026 – Lâm Phú Cường – Bài tập CSS
+        </footer>
+
+    </div>
+
+</body>
+</html>

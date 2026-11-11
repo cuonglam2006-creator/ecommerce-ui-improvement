@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập CSS - Câu 7</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+
+        #wrapper {
+            width: 300px;
+            height: 500px;
+            padding: 8px;
+            border: 2px solid black;
+        }
+
+        header {
+            height: 80px;
+            border: 2px solid black;
+            margin-bottom: 8px;
+            padding: 10px;
+        }
+
+        .content {
+            display: flex;
+            height: 280px;
+            gap: 8px;
+            margin-bottom: 8px;
+        }
+
+        nav {
+            width: 40px;
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+        main {
+            flex: 1;
+            border: 2px solid black;
+            padding: 5px;
+        }
+
+        footer {
+            height: 100px;
+            border: 2px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <header>header</header>
+
+        <div class="content">
+            <nav>nav</nav>
+            <main>main</main>
+        </div>
+
+        <footer>footer</footer>
+
+    </div>
+
+</body>
+</html>
