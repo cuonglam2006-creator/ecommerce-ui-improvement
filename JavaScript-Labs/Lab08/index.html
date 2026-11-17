@@ -1,1 +1,241 @@
 
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 08 | JavaScript 1</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f3f6fb;
+            color: #1e293b;
+            line-height: 1.6;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #101d35, #164e63);
+            color: white;
+            padding: 55px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: #a5f3fc;
+            text-decoration: none;
+            margin-bottom: 30px;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .intro {
+            margin-bottom: 30px;
+        }
+
+        .intro h2 {
+            margin-bottom: 8px;
+        }
+
+        .exercise-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 18px;
+        }
+
+        .exercise {
+            background: white;
+            padding: 24px;
+            border-radius: 14px;
+            border: 1px solid #e2e8f0;
+            transition: 0.25s;
+        }
+
+        .exercise:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+        }
+
+        .number {
+            color: #0891b2;
+            font-size: 13px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .exercise h3 {
+            margin: 10px 0;
+            font-size: 19px;
+        }
+
+        .exercise p {
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        .exercise a {
+            display: inline-block;
+            color: #0891b2;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .exercise a:hover {
+            text-decoration: underline;
+        }
+
+        .resources {
+            margin-top: 35px;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .resources a {
+            color: #475569;
+            text-decoration: none;
+        }
+
+        .resources a:hover {
+            color: #0891b2;
+        }
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            color: #64748b;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 29px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <a class="back-link" href="../index.html">
+                ← Quay lại trang JavaScript Labs
+            </a>
+
+            <h1>Lab 08 – JavaScript 1</h1>
+            <p>Danh sách các bài thực hành và nội dung học tập</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <h2>Nội dung thực hành</h2>
+            <p>
+                Tổng hợp các bài tập thuộc Lab 08.
+                Chọn một bài bên dưới để xem nội dung thực hành.
+            </p>
+        </section>
+
+        <section class="exercise-list">
+
+            <article class="exercise">
+                <span class="number">BÀI THỰC HÀNH</span>
+                <h3>Exercise</h3>
+                <p>Trang bài tập chính của Lab 08.</p>
+                <a href="exercise.html">Mở bài tập →</a>
+            </article>
+
+            <article class="exercise">
+                <span class="number">WALKTHROUGH 02</span>
+                <h3>Walkthrough 02</h3>
+                <p>Bài thực hành số 02.</p>
+                <a href="lab08-walkthrough02.html">Mở bài tập →</a>
+            </article>
+
+            <article class="exercise">
+                <span class="number">WALKTHROUGH 06</span>
+                <h3>Walkthrough 06</h3>
+                <p>Bài thực hành số 06.</p>
+                <a href="lab08-walkthrough06.html">Mở bài tập →</a>
+            </article>
+
+            <article class="exercise">
+                <span class="number">WALKTHROUGH 07</span>
+                <h3>Walkthrough 07</h3>
+                <p>Bài thực hành số 07.</p>
+                <a href="lab08-walkthrough07.html">Mở bài tập →</a>
+            </article>
+
+            <article class="exercise">
+                <span class="number">WALKTHROUGH 08</span>
+                <h3>Walkthrough 08</h3>
+                <p>Bài thực hành số 08.</p>
+                <a href="lab08-walkthrough08.html">Mở bài tập →</a>
+            </article>
+
+            <article class="exercise">
+                <span class="number">WALKTHROUGH 09</span>
+                <h3>Walkthrough 09</h3>
+                <p>Bài thực hành số 09.</p>
+                <a href="lab08-walkthrough09.html">Mở bài tập →</a>
+            </article>
+
+            <article class="exercise">
+                <span class="number">WALKTHROUGH 10</span>
+                <h3>Walkthrough 10</h3>
+                <p>Bài thực hành số 10.</p>
+                <a href="lab08-walkthrough10.html">Mở bài tập →</a>
+            </article>
+
+            <article class="exercise">
+                <span class="number">WALKTHROUGH 11</span>
+                <h3>Walkthrough 11</h3>
+                <p>Bài thực hành số 11.</p>
+                <a href="lab08-walkthrough11.html">Mở bài tập →</a>
+            </article>
+
+        </section>
+
+        <div class="resources">
+            <a href="Lab08.pdf" target="_blank">📄 Xem tài liệu Lab08</a>
+            <a href="README.md">📘 README</a>
+        </div>
+    </main>
+
+    <footer>
+        © 2026 Lâm Phú Cường | Lab 08 – JavaScript 1
+    </footer>
+
+</body>
+</html>
+
