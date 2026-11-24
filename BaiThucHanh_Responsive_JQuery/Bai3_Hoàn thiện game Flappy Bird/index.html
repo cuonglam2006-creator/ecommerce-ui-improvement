@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Flappy Bird Custom - UEH</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="container">
+        <!-- Hiển thị Level góc trên bên trái -->
+        <div id="level_div">Level: <span id="level">1</span></div>
+        
+        <!-- Điểm số & Kỷ lục -->
+        <div id="score_div">
+            <p>Score: <span id="score">0</span></p>
+            <p style="font-size: 16px;">Best: <span id="best_score">0</span></p>
+        </div>
+
+        <div id="bird"></div>
+        <div id="pole_1" class="pole"></div>
+        <div id="pole_2" class="pole"></div>
+
+        <!-- Nút bắt đầu chơi -->
+        <button id="play_btn">Nhấn vào đây hoặc phím ↓ để chơi</button>
+
+        <!-- Thông báo chiến thắng khi đạt 50 điểm -->
+        <div id="win_msg">CHIẾN THẮNG! (50 ĐIỂM)</div>
+        
+        <!-- Nút chơi lại -->
+        <button id="restart_btn">Chơi lại</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
