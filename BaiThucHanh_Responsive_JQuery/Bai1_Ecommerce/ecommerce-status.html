@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Đơn hàng - PaperNest</title>
+
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#mainNavbar">
+
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="index.html">
+                PaperNest
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="index.html">Trang chủ</a>
+                </li>
+
+                <li>
+                    <a href="products.html">Sản phẩm</a>
+                </li>
+
+                <li>
+                    <a href="index.html#about">Giới thiệu</a>
+                </li>
+
+                <li>
+                    <a href="index.html#contact">Liên hệ</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active">
+                    <a href="ecommerce-status.html">
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                        Đơn hàng
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-user"></span>
+                        Tài khoản
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+
+<!-- ================= ORDER STATUS ================= -->
+<div class="container order-status-page">
+
+    <div class="page-header">
+        <h2>Trạng thái đơn hàng</h2>
+        <p>Theo dõi các đơn hàng của bạn tại PaperNest.</p>
+    </div>
+
+
+    <!-- ORDER 1 -->
+    <div class="panel panel-default">
+
+        <div class="panel-heading clearfix">
+            <strong>Đơn hàng #PN001</strong>
+            <span class="pull-right">Ngày đặt: 20/11/2026</span>
+        </div>
+
+        <div class="panel-body">
+
+            <div class="row order-item">
+
+                <div class="col-xs-3 col-sm-2">
+                    <img src="images/atomic-habits.webp"
+                         class="img-responsive"
+                         alt="Atomic Habits">
+                </div>
+
+                <div class="col-xs-9 col-sm-4">
+                    <a href="product-detail.html">
+                        <strong>Atomic Habits</strong>
+                    </a>
+                    <p>Sách phát triển bản thân</p>
+                </div>
+
+                <div class="col-xs-4 col-sm-2">
+                    Số lượng: 1
+                </div>
+
+                <div class="col-xs-4 col-sm-2">
+                    160.000đ
+                </div>
+
+                <div class="col-xs-4 col-sm-2">
+                    <span class="label label-success">
+                        Completed
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ORDER 2 -->
+    <div class="panel panel-default">
+
+        <div class="panel-heading clearfix">
+            <strong>Đơn hàng #PN002</strong>
+            <span class="pull-right">Ngày đặt: 21/11/2026</span>
+        </div>
+
+        <div class="panel-body">
+
+            <div class="row order-item">
+
+                <div class="col-xs-3 col-sm-2">
+                    <img src="images/notebook.jpg"
+                         class="img-responsive"
+                         alt="Notebook">
+                </div>
+
+                <div class="col-xs-9 col-sm-4">
+                    <a href="products.html#notebooks">
+                        <strong>Notebook</strong>
+                    </a>
+                    <p>Sổ ghi chép</p>
+                </div>
+
+                <div class="col-xs-4 col-sm-2">
+                    Số lượng: 2
+                </div>
+
+                <div class="col-xs-4 col-sm-2">
+                    120.000đ
+                </div>
+
+                <div class="col-xs-4 col-sm-2">
+                    <span class="label label-warning">
+                        Processing
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ORDER 3 -->
+    <div class="panel panel-default">
+
+        <div class="panel-heading clearfix">
+            <strong>Đơn hàng #PN003</strong>
+            <span class="pull-right">Ngày đặt: 22/11/2026</span>
+        </div>
+
+        <div class="panel-body">
+
+            <div class="row order-item">
+
+                <div class="col-xs-3 col-sm-2">
+                    <img src="images/gel-pen.webp"
+                         class="img-responsive"
+                         alt="Gel Pen">
+                </div>
+
+                <div class="col-xs-9 col-sm-4">
+                    <a href="products.html#pens">
+                        <strong>Gel Pen</strong>
+                    </a>
+                    <p>Bút gel</p>
+                </div>
+
+                <div class="col-xs-4 col-sm-2">
+                    Số lượng: 3
+                </div>
+
+                <div class="col-xs-4 col-sm-2">
+                    75.000đ
+                </div>
+
+                <div class="col-xs-4 col-sm-2">
+                    <span class="label label-danger">
+                        Cancelled
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+    <div class="container text-center">
+
+        <h3>PaperNest</h3>
+
+        <p>Nhà sách và văn phòng phẩm dành cho bạn.</p>
+
+        <p>Email: papernest@example.com</p>
+
+        <p>&copy; 2026 PaperNest. All rights reserved.</p>
+
+    </div>
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>

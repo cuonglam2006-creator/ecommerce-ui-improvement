@@ -1,0 +1,569 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Sản phẩm - PaperNest</title>
+
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Bootstrap Star Rating -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-star-rating@4.1.2/css/star-rating.min.css">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-star-rating@4.1.2/themes/krajee-svg/theme.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#mainNavbar">
+
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="index.html">
+                PaperNest
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="index.html">Trang chủ</a>
+                </li>
+
+                <li class="active">
+                    <a href="products.html">Sản phẩm</a>
+                </li>
+
+                <li>
+                    <a href="index.html#about">Giới thiệu</a>
+                </li>
+
+                <li>
+                    <a href="index.html#contact">Liên hệ</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="ecommerce-status.html">
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                        Đơn hàng
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-user"></span>
+                        Tài khoản
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+
+<!-- ================= PRODUCT CONTENT ================= -->
+<div class="container products-page">
+
+    <div class="row">
+
+        <!-- SIDEBAR -->
+        <aside class="col-md-3">
+
+            <div class="panel panel-default category-panel">
+
+                <div class="panel-heading">
+                    <h3 class="panel-title">
+                        Danh mục sản phẩm
+                    </h3>
+                </div>
+
+                <div class="list-group">
+
+                    <a href="#books" class="list-group-item">
+                        <span class="glyphicon glyphicon-book"></span>
+                        Sách
+                    </a>
+
+                    <a href="#stationery" class="list-group-item">
+                        <span class="glyphicon glyphicon-pencil"></span>
+                        Văn phòng phẩm
+                    </a>
+
+                    <a href="#notebooks" class="list-group-item">
+                        <span class="glyphicon glyphicon-list-alt"></span>
+                        Sổ và giấy
+                    </a>
+
+                    <a href="#pens" class="list-group-item">
+                        <span class="glyphicon glyphicon-edit"></span>
+                        Bút viết
+                    </a>
+
+                    <a href="#accessories" class="list-group-item">
+                        <span class="glyphicon glyphicon-briefcase"></span>
+                        Phụ kiện học tập
+                    </a>
+
+                </div>
+            </div>
+
+        </aside>
+
+
+        <!-- PRODUCT LIST -->
+        <main class="col-md-9">
+
+            <div class="products-heading">
+                <h2>Tất cả sản phẩm</h2>
+                <p>Khám phá các sản phẩm tại PaperNest</p>
+            </div>
+
+
+            <!-- ================= BOOKS ================= -->
+            <section id="books" class="product-category">
+
+                <h3>Sách</h3>
+
+                <div class="row">
+
+                    <div class="col-sm-6 col-md-4">
+
+                        <div class="thumbnail product-card">
+
+                            <div class="product-image">
+
+                                <span class="discount-label">-20%</span>
+                                <span class="product-badge">Best Seller</span>
+
+                                <a href="product-detail.html">
+                                    <img src="images/atomic-habits.webp"
+                                         alt="Atomic Habits">
+                                </a>
+
+                            </div>
+
+                            <div class="caption">
+
+                                <h3>Atomic Habits</h3>
+
+                                <p>
+                                    Sách phát triển bản thân và xây dựng
+                                    thói quen.
+                                </p>
+
+                                <p class="product-price">
+                                    160.000đ <del>200.000đ</del>
+                                </p>
+
+                                <div class="product-rating">
+                                    <input type="number"
+                                           class="rating"
+                                           value="4.5"
+                                           min="0"
+                                           max="5"
+                                           step="0.5"
+                                           data-size="xs"
+                                           data-show-clear="false"
+                                           data-show-caption="false"
+                                           data-readonly="true">
+                                </div>
+
+                                <p class="stock-label">
+                                    Còn hàng: 8 sản phẩm
+                                </p>
+
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success"
+                                         role="progressbar"
+                                         aria-valuenow="80"
+                                         aria-valuemin="0"
+                                         aria-valuemax="100"
+                                         style="width: 80%;">
+                                        80%
+                                    </div>
+                                </div>
+
+                                <a href="product-detail.html"
+                                   class="btn btn-primary btn-block">
+                                    Xem chi tiết
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- ================= STATIONERY ================= -->
+            <section id="stationery" class="product-category">
+
+                <h3>Văn phòng phẩm</h3>
+
+                <div class="row">
+
+                    <div class="col-sm-6 col-md-4">
+
+                        <div class="thumbnail product-card">
+
+                            <div class="product-image">
+
+                                <span class="product-badge">New</span>
+
+                                <a href="products.html#stationery">
+                                    <img src="images/pencil-case.jpg"
+                                         alt="Hộp bút">
+                                </a>
+
+                            </div>
+
+                            <div class="caption">
+
+                                <h3>Hộp bút</h3>
+
+                                <p>
+                                    Phụ kiện tiện lợi để sắp xếp
+                                    dụng cụ học tập.
+                                </p>
+
+                                <p class="product-price">
+                                    65.000đ
+                                </p>
+
+                                <div class="product-rating">
+                                    <input type="number"
+                                           class="rating"
+                                           value="4"
+                                           min="0"
+                                           max="5"
+                                           step="0.5"
+                                           data-size="xs"
+                                           data-show-clear="false"
+                                           data-show-caption="false"
+                                           data-readonly="true">
+                                </div>
+
+                                <p class="stock-label">
+                                    Còn hàng: 12 sản phẩm
+                                </p>
+
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success"
+                                         role="progressbar"
+                                         aria-valuenow="100"
+                                         aria-valuemin="0"
+                                         aria-valuemax="100"
+                                         style="width: 100%;">
+                                        100%
+                                    </div>
+                                </div>
+
+                                <a href="products.html#stationery"
+                                   class="btn btn-primary btn-block">
+                                    Xem sản phẩm
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- ================= NOTEBOOKS ================= -->
+            <section id="notebooks" class="product-category">
+
+                <h3>Sổ và giấy</h3>
+
+                <div class="row">
+
+                    <div class="col-sm-6 col-md-4">
+
+                        <div class="thumbnail product-card">
+
+                            <div class="product-image">
+
+                                <a href="products.html#notebooks">
+                                    <img src="images/notebook.jpg"
+                                         alt="Sổ tay ghi chú">
+                                </a>
+
+                            </div>
+
+                            <div class="caption">
+
+                                <h3>Sổ tay ghi chú</h3>
+
+                                <p>
+                                    Sổ tay phục vụ ghi chép và lên kế hoạch.
+                                </p>
+
+                                <p class="product-price">
+                                    45.000đ
+                                </p>
+
+                                <div class="product-rating">
+                                    <input type="number"
+                                           class="rating"
+                                           value="4"
+                                           min="0"
+                                           max="5"
+                                           step="0.5"
+                                           data-size="xs"
+                                           data-show-clear="false"
+                                           data-show-caption="false"
+                                           data-readonly="true">
+                                </div>
+
+                                <p class="stock-label">
+                                    Còn hàng: 15 sản phẩm
+                                </p>
+
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success"
+                                         role="progressbar"
+                                         aria-valuenow="100"
+                                         aria-valuemin="0"
+                                         aria-valuemax="100"
+                                         style="width: 100%;">
+                                        100%
+                                    </div>
+                                </div>
+
+                                <a href="products.html#notebooks"
+                                   class="btn btn-primary btn-block">
+                                    Xem sản phẩm
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- ================= PENS ================= -->
+            <section id="pens" class="product-category">
+
+                <h3>Bút viết</h3>
+
+                <div class="row">
+
+                    <!-- GEL PEN -->
+                    <div class="col-sm-6 col-md-4">
+
+                        <div class="thumbnail product-card">
+
+                            <div class="product-image">
+
+                                <span class="discount-label">-10%</span>
+
+                                <a href="products.html#pens">
+                                    <img src="images/gel-pen.webp"
+                                         alt="Bút gel">
+                                </a>
+
+                            </div>
+
+                            <div class="caption">
+
+                                <h3>Bút gel</h3>
+
+                                <p>
+                                    Bút viết êm, phù hợp cho học tập
+                                    và công việc.
+                                </p>
+
+                                <p class="product-price">
+                                    18.000đ <del>20.000đ</del>
+                                </p>
+
+                                <div class="product-rating">
+                                    <input type="number"
+                                           class="rating"
+                                           value="4.5"
+                                           min="0"
+                                           max="5"
+                                           step="0.5"
+                                           data-size="xs"
+                                           data-show-clear="false"
+                                           data-show-caption="false"
+                                           data-readonly="true">
+                                </div>
+
+                                <p class="stock-label">
+                                    Còn hàng: 5 sản phẩm
+                                </p>
+
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-warning"
+                                         role="progressbar"
+                                         aria-valuenow="50"
+                                         aria-valuemin="0"
+                                         aria-valuemax="100"
+                                         style="width: 50%;">
+                                        50%
+                                    </div>
+                                </div>
+
+                                <a href="products.html#pens"
+                                   class="btn btn-primary btn-block">
+                                    Xem sản phẩm
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- HIGHLIGHTER -->
+                    <div class="col-sm-6 col-md-4">
+
+                        <div class="thumbnail product-card">
+
+                            <div class="product-image">
+
+                                <span class="product-badge">New</span>
+
+                                <a href="products.html#pens">
+                                    <img src="images/highlighter.webp"
+                                         alt="Bút highlight">
+                                </a>
+
+                            </div>
+
+                            <div class="caption">
+
+                                <h3>Bút Highlight</h3>
+
+                                <p>
+                                    Bút đánh dấu màu sắc nổi bật,
+                                    tiện dụng.
+                                </p>
+
+                                <p class="product-price">
+                                    35.000đ
+                                </p>
+
+                                <div class="product-rating">
+                                    <input type="number"
+                                           class="rating"
+                                           value="4"
+                                           min="0"
+                                           max="5"
+                                           step="0.5"
+                                           data-size="xs"
+                                           data-show-clear="false"
+                                           data-show-caption="false"
+                                           data-readonly="true">
+                                </div>
+
+                                <p class="stock-label">
+                                    Còn hàng: 10 sản phẩm
+                                </p>
+
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-success"
+                                         role="progressbar"
+                                         aria-valuenow="100"
+                                         aria-valuemin="0"
+                                         aria-valuemax="100"
+                                         style="width: 100%;">
+                                        100%
+                                    </div>
+                                </div>
+
+                                <a href="products.html#pens"
+                                   class="btn btn-primary btn-block">
+                                    Xem sản phẩm
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+
+            <!-- ================= ACCESSORIES ================= -->
+            <section id="accessories" class="product-category">
+                <h3>Phụ kiện học tập</h3>
+
+                <p>
+                    Khám phá thêm các phụ kiện hỗ trợ học tập
+                    tại PaperNest.
+                </p>
+            </section>
+
+        </main>
+
+    </div>
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+
+    <div class="container text-center">
+
+        <h3>PaperNest</h3>
+
+        <p>Nhà sách và văn phòng phẩm dành cho bạn.</p>
+
+        <p>Email: papernest@example.com</p>
+
+        <p>&copy; 2026 PaperNest. All rights reserved.</p>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Bootstrap Star Rating -->
+<script src="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-star-rating@4.1.2/js/star-rating.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-star-rating@4.1.2/themes/krajee-svg/theme.js"></script>
+
+<!-- Main JS -->
+<script src="js/main.js"></script>
+
+</body>
+</html>

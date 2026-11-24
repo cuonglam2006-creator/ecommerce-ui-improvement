@@ -1,0 +1,554 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Atomic Habits - PaperNest</title>
+
+    <!-- Bootstrap 3.3.7 -->
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Bootstrap Star Rating -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-star-rating@4.1.2/css/star-rating.min.css">
+
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-star-rating@4.1.2/themes/krajee-svg/theme.css">
+
+    <!-- xZoom CSS -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/xzoom@1.0.15/dist/xzoom.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+
+        <div class="navbar-header">
+            <button type="button"
+                    class="navbar-toggle collapsed"
+                    data-toggle="collapse"
+                    data-target="#mainNavbar">
+
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+            <a class="navbar-brand" href="index.html">
+                PaperNest
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="mainNavbar">
+
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="index.html">Trang chủ</a>
+                </li>
+
+                <li class="active">
+                    <a href="products.html">Sản phẩm</a>
+                </li>
+
+                <li>
+                    <a href="index.html#about">Giới thiệu</a>
+                </li>
+
+                <li>
+                    <a href="index.html#contact">Liên hệ</a>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="ecommerce-status.html">
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                        Đơn hàng
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="glyphicon glyphicon-user"></span>
+                        Tài khoản
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</nav>
+
+
+<!-- ================= BREADCRUMB ================= -->
+<div class="container">
+
+    <ol class="breadcrumb detail-breadcrumb">
+        <li>
+            <a href="index.html">Trang chủ</a>
+        </li>
+
+        <li>
+            <a href="products.html">Sản phẩm</a>
+        </li>
+
+        <li class="active">Atomic Habits</li>
+    </ol>
+
+</div>
+
+
+<!-- ================= PRODUCT DETAIL ================= -->
+<div class="container product-detail-page">
+
+    <div class="row">
+
+        <!-- PRODUCT IMAGE -->
+        <div class="col-md-5">
+
+            <div class="detail-image-box">
+
+                <img
+                    class="xzoom"
+                    id="mainProductImage"
+                    src="images/atomic-habits.webp"
+                    xoriginal="images/atomic-habits.webp"
+                    alt="Sách Atomic Habits">
+
+                <p class="image-guide">
+                    <span class="glyphicon glyphicon-search"></span>
+                    Di chuyển chuột lên ảnh để phóng to
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- PRODUCT INFORMATION -->
+        <div class="col-md-7">
+
+            <div class="product-information">
+
+                <span class="detail-category">
+                    Sách phát triển bản thân
+                </span>
+
+                <h1>Atomic Habits</h1>
+
+                <!-- PRODUCT RATING -->
+                <p class="detail-rating">
+
+                    <input type="number"
+                           class="rating"
+                           value="4.5"
+                           min="0"
+                           max="5"
+                           step="0.5"
+                           data-size="sm"
+                           data-show-clear="false"
+                           data-show-caption="false"
+                           data-readonly="true">
+
+                    <span>(4.5/5 - Đánh giá mẫu)</span>
+
+                </p>
+
+
+                <!-- PRODUCT PRICE -->
+                <div class="detail-price">
+
+                    <span>160.000đ</span>
+
+                    <del>200.000đ</del>
+
+                    <span class="detail-discount">-20%</span>
+
+                </div>
+
+
+                <!-- PRODUCT DESCRIPTION -->
+                <p class="detail-description">
+                    Atomic Habits là cuốn sách về cách xây dựng
+                    những thói quen tốt, loại bỏ thói quen xấu
+                    và tạo ra những thay đổi tích cực thông qua
+                    các hành động nhỏ mỗi ngày.
+                </p>
+
+                <hr>
+
+
+                <!-- STOCK STATUS -->
+                <p>
+                    <strong>Tình trạng:</strong>
+                    <span class="text-success">Còn hàng</span>
+                </p>
+
+                <p>
+                    <strong>Số lượng còn:</strong>
+                    8 sản phẩm
+                </p>
+
+                <label>Trạng thái kho</label>
+
+                <div class="progress">
+
+                    <div class="progress-bar progress-bar-success"
+                         role="progressbar"
+                         aria-valuenow="80"
+                         aria-valuemin="0"
+                         aria-valuemax="100"
+                         style="width: 80%;">
+
+                        80%
+
+                    </div>
+
+                </div>
+
+                <hr>
+
+
+                <!-- PURCHASE FORM -->
+                <form id="purchaseForm">
+
+                    <div class="form-group">
+
+                        <label for="quantity">Số lượng</label>
+
+                        <input type="number"
+                               class="form-control quantity-input"
+                               id="quantity"
+                               name="quantity"
+                               min="1"
+                               max="8"
+                               value="1"
+                               required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="buyerEmail">Email liên hệ</label>
+
+                        <input type="email"
+                               class="form-control"
+                               id="buyerEmail"
+                               placeholder="Nhập email của bạn">
+
+                    </div>
+
+
+                    <button type="submit"
+                            class="btn btn-primary btn-lg">
+
+                        <span class="glyphicon glyphicon-shopping-cart"></span>
+                        Thêm vào giỏ hàng
+
+                    </button>
+
+
+                    <button type="button"
+                            class="btn btn-default btn-lg"
+                            onclick="alert('Bạn đã thêm sản phẩm vào danh sách yêu thích!')">
+
+                        <span class="glyphicon glyphicon-heart"></span>
+                        Yêu thích
+
+                    </button>
+
+                </form>
+
+
+                <div id="purchaseMessage"
+                     class="purchase-message"></div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= PRODUCT DESCRIPTION ================= -->
+    <div class="row detail-section">
+
+        <div class="col-md-12">
+
+            <h2>Thông tin sản phẩm</h2>
+
+            <div class="detail-content">
+
+                <p>
+                    <strong>Tên sản phẩm:</strong>
+                    Atomic Habits
+                </p>
+
+                <p>
+                    <strong>Danh mục:</strong>
+                    Sách phát triển bản thân
+                </p>
+
+                <p>
+                    <strong>Giá bán:</strong>
+                    160.000đ
+                </p>
+
+                <p>
+                    <strong>Ưu điểm:</strong>
+                    Nội dung dễ tiếp cận, phù hợp với người muốn
+                    cải thiện thói quen học tập và làm việc.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= CUSTOMER REVIEWS ================= -->
+    <div class="row detail-section">
+
+        <div class="col-md-12">
+
+            <h2>Đánh giá sản phẩm</h2>
+
+            <div class="review-item">
+
+                <strong>Nguyễn Minh Anh</strong>
+
+                <p class="review-stars">★★★★★</p>
+
+                <p>
+                    Nội dung hữu ích, giúp mình có thêm động lực
+                    xây dựng thói quen tốt.
+                </p>
+
+            </div>
+
+
+            <div class="review-item">
+
+                <strong>Trần Hoàng Nam</strong>
+
+                <p class="review-stars">★★★★☆</p>
+
+                <p>
+                    Sách dễ đọc, có nhiều ví dụ thực tế.
+                </p>
+
+            </div>
+
+
+            <h3>Viết đánh giá</h3>
+
+            <form id="reviewForm">
+
+                <div class="form-group">
+
+                    <label for="reviewName">Tên của bạn</label>
+
+                    <input type="text"
+                           id="reviewName"
+                           class="form-control"
+                           required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="reviewContent">
+                        Nội dung đánh giá
+                    </label>
+
+                    <textarea id="reviewContent"
+                              class="form-control"
+                              rows="4"
+                              required></textarea>
+
+                </div>
+
+
+                <button type="submit" class="btn btn-primary">
+                    Gửi đánh giá
+                </button>
+
+            </form>
+
+
+            <div id="reviewMessage"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= RELATED PRODUCTS ================= -->
+    <div class="row detail-section">
+
+        <div class="col-md-12">
+            <h2>Sản phẩm liên quan</h2>
+        </div>
+
+
+        <!-- RELATED PRODUCT 1 -->
+        <div class="col-sm-6 col-md-3">
+
+            <div class="thumbnail related-product">
+
+                <img src="images/notebook.jpg"
+                     alt="Sổ tay">
+
+                <div class="caption">
+
+                    <h3>Sổ tay ghi chú</h3>
+
+                    <p>45.000đ</p>
+
+                    <a href="products.html"
+                       class="btn btn-default btn-block">
+                        Xem sản phẩm
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RELATED PRODUCT 2 -->
+        <div class="col-sm-6 col-md-3">
+
+            <div class="thumbnail related-product">
+
+                <img src="images/gel-pen.webp"
+                     alt="Bút gel">
+
+                <div class="caption">
+
+                    <h3>Bút gel</h3>
+
+                    <p>18.000đ</p>
+
+                    <a href="products.html"
+                       class="btn btn-default btn-block">
+                        Xem sản phẩm
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RELATED PRODUCT 3 -->
+        <div class="col-sm-6 col-md-3">
+
+            <div class="thumbnail related-product">
+
+                <img src="images/highlighter.webp"
+                     alt="Bút highlight">
+
+                <div class="caption">
+
+                    <h3>Bút Highlight</h3>
+
+                    <p>35.000đ</p>
+
+                    <a href="products.html"
+                       class="btn btn-default btn-block">
+                        Xem sản phẩm
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- RELATED PRODUCT 4 -->
+        <div class="col-sm-6 col-md-3">
+
+            <div class="thumbnail related-product">
+
+                <img src="images/pencil-case.jpg"
+                     alt="Hộp bút">
+
+                <div class="caption">
+
+                    <h3>Hộp bút</h3>
+
+                    <p>65.000đ</p>
+
+                    <a href="products.html"
+                       class="btn btn-default btn-block">
+                        Xem sản phẩm
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+
+    <div class="container text-center">
+
+        <h3>PaperNest</h3>
+
+        <p>Nhà sách và văn phòng phẩm dành cho bạn.</p>
+
+        <p>Email: papernest@example.com</p>
+
+        <p>&copy; 2026 PaperNest. All rights reserved.</p>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- xZoom JS -->
+<script src="https://cdn.jsdelivr.net/npm/xzoom@1.0.15/dist/xzoom.min.js"></script>
+
+<!-- Bootstrap Star Rating JS -->
+<script src="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-star-rating@4.1.2/js/star-rating.min.js"></script>
+
+<!-- Bootstrap Star Rating SVG Theme -->
+<script src="https://cdn.jsdelivr.net/gh/kartik-v/bootstrap-star-rating@4.1.2/themes/krajee-svg/theme.js"></script>
+
+<!-- Main JS -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
